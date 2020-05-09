@@ -27,7 +27,7 @@ class Form extends React.Component {
             })
             .catch(e => {
                 console.error(e);
-                alert(`Erreur lors de l'ajout d'un employé : ${e.message}`);
+                alert(`Error: ${e.message}`);
             });
     }
 
@@ -40,9 +40,9 @@ class Form extends React.Component {
 
                 <form onSubmit={this.submitForm}>
                     <fieldset>
-                        <legend>Informations</legend>
+                        <legend>Information</legend>
                         <div className="form-data">
-                            <label htmlFor="title">Nom</label>
+                            <label htmlFor="title">Movie Title</label>
                             <input
                                 type="text"
                                 id="title"
@@ -53,7 +53,7 @@ class Form extends React.Component {
                         </div>
 
                         <div className="form-data">
-                            <label htmlFor="poster">Prénom</label>
+                            <label htmlFor="poster">Poster URL</label>
                             <input
                                 type="text"
                                 id="poster"
@@ -64,7 +64,7 @@ class Form extends React.Component {
                         </div>
 
                         <div className="form-data">
-                            <label htmlFor="comment">E-mail</label>
+                            <label htmlFor="comment">Comment</label>
                             <input
                                 type="textarea"
                                 id="comment"
