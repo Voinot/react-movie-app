@@ -23,7 +23,7 @@ class Form extends React.Component {
         axios.post(url, this.state)
             .then(res => res.data)
             .then(res => {
-                alert(`Favorite movie added with ID${res.id} !`);
+                alert(`Favorite movie added with ID ${res.id} !`);
             })
             .catch(e => {
                 console.error(e);
